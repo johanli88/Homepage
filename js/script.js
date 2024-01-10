@@ -2297,7 +2297,8 @@ if (IS_HEADER) {
 	init();
 } else {
 	// Allow status to render, then preload assets and start app.
-	setLoadingStatus('正在点燃导火线');
+	setLoadingStatus('烟花开始后点击屏幕会有音效');
+	//setLoadingStatus('正在点燃引火线');
 	setTimeout(() => {
 		soundManager.preload()
 		.then(
